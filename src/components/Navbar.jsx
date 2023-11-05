@@ -1,4 +1,4 @@
-import { Search, LocalMall, DragHandle,Mail, ShoppingCart } from "@mui/icons-material";
+import { Search, LocalMall, DragHandle, ShoppingCart } from "@mui/icons-material";
 import { Badge } from "@mui/material";
 import React, { useState } from "react";
 
@@ -6,9 +6,14 @@ const Navbar = () => {
   //state
   const [nav, setNav] = useState(false);
 
+  //navbar on mobile device
   const navHandler = () => {
     setNav(!nav);
   };
+
+  //mobile nav items style
+  const style = 'outline-none border-none bg-blue-500 text-white px-4 py-2 rounded-md font-bold hover:opacity-80'
+  
   return (
     <div className="navbar w-full h-[60px] shadow-lg relative z-10">
       <div className="wrapper h-full flex justify-between items-center px-[5px] md:px-[20px] py-[10px]">
@@ -25,7 +30,7 @@ const Navbar = () => {
         {/* logo */}
         <div className="flex-1">
           <h1 className="hidden md:block text-3xl font-bold text-[#8a4af3] px-0 md:px-2">
-            Summer Kings
+            High Shoppe
           </h1>
           <div className="md:hidden xs:hidden">
             <LocalMall
@@ -38,14 +43,14 @@ const Navbar = () => {
         {/* nav items */}
         <div className="hidden md:block">
           <div className="flex flex-1 gap-3 items-center">
-            <button className="outline-none border-none bg-blue-500 text-white px-4 py-2 rounded-md font-bold hover:opacity-80">Register</button>
-            <button className="outline-none border-none bg-blue-500 text-white px-4 py-2 rounded-md font-bold hover:opacity-80">Sign in</button>
+            <button className={style}>Register</button>
+            <button className={style}>Sign in</button>
             <Badge badgeContent={2} color="error">
               <ShoppingCart color="primary" className="cursor-pointer"/>
             </Badge>
           </div>
         </div>
-    
+
         {/* mobile menu */}
         <div className="md:hidden">
           <DragHandle onClick={navHandler} className="cursor-pointer" />
@@ -56,7 +61,7 @@ const Navbar = () => {
                     <h4 className="w-full text-center text-white py-3 border-b text-lg">Sign in</h4>
                     <div className="flex flex-col items-center mt-3">
                       <Badge badgeContent={2} color="error">
-                        <ShoppingCart color="primary" className="cursor-pointer"/>
+                        <ShoppingCart style={{color: "#fff"}} className="cursor-pointer"/>
                       </Badge>
                     </div>
                 </div>

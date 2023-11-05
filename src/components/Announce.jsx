@@ -3,7 +3,7 @@ import CloseIcon from '@mui/icons-material/Close';
 
 const Announce = () => {
     //state
-    const [announce,setAnnounce] = useState('flex justify-center items-center bg-[#8a4af3] text-white font-bold p-1')
+    const [announce,setAnnounce] = useState('flex justify-center items-center bg-[#8a4af3] text-white font-bold p-1 animate-bounce')
 
     //close announce bar onclick
     const announceHandler = () => {
