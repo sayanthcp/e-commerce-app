@@ -11,8 +11,8 @@ export const ApiSlides = [
       image: 'https://st3.depositphotos.com/7713882/17906/i/600/depositphotos_179068502-stock-photo-happy-woman-showing-good-big.jpg',
       active: true,
       content: {
-        heading: "Awsome deals this week!",
-        paragraph: "Upto 40% off",
+        heading: "Awesome deals this week!",
+        paragraph: "Upto 38% off",
       },
       background: 'bg-[#ffd028]'
     },

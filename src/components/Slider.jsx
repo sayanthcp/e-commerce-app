@@ -7,6 +7,11 @@ const Slider = () => {
     const [slide,] = useState(ApiSlides)
     const [activeSlide, setActiveSlide] = useState(0)
 
+    //TIMEOUT
+    setTimeout(() => {
+      slideHandler()
+    },[4000]);
+
     //onclick slide handler
     const slideHandler = () => {
         

@@ -29,7 +29,7 @@ const Navbar = () => {
 
         {/* logo */}
         <div className="flex-1">
-          <h1 className="hidden md:block text-3xl font-bold text-[#8a4af3] px-0 md:px-2">
+          <h1 className="hidden md:block text-3xl font-extrabold text-[#8a4af3] px-0 md:px-2">
             High Shoppe
           </h1>
           <div className="md:hidden xs:hidden">
